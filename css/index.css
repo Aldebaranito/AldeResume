@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7776BC;
+    border-bottom: 10px solid #000;
+    padding: 10px 20px;
+}
+
+nav {
+    text-align: right;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 20px;
+    font-family: "Fira code", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 30px;
+    text-shadow: 2px 2px 0 #606060;
+}
+
+a::before {                             /* pseudo-elemento, criado no css e não no html, pode ser executado no inicio ou no final da tag */
+    content: "";                        /* propriedade obrigatoria pra pseudo-elemento */
+    background-color: #F50000;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-shadow: 2px 2px 0 #000;;
+    color: #FFF;
+}
+
+#CV-download-button {
+    display: inline-block;
+    background-color: #F50000;
+    padding: 18px 20px;                 /* respiro interno, aplicado na direita e esquerda */
+    box-shadow: 5px 5px 0 #000;
+    margin-right: 0;
+    transition: transform 120ms linear;    /* é aplicado no inicio e no fim da animação */
+}
+
+#CV-download-button:hover, #CV-download-button:focus {
+    background-color: #CC0000;
+    color: #FFF;
+    transform: scale(1.08);
+}
+
