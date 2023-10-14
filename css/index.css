@@ -30,7 +30,7 @@ a::before {                             /* pseudo-elemento, criado no css e não
     margin-right: 10px;
 }
 
-a:hover {
+a:hover, a:focus {
     text-shadow: 2px 2px 0 #000;;
     color: #FFF;
 }
