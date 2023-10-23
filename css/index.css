@@ -15,7 +15,6 @@ nav {
     align-items: center;
     color: #FFF;
     font-size: 20px;
-    font-family: "Fira code", Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-decoration: none;
     margin-right: 30px;
@@ -45,7 +44,6 @@ nav {
     background-color: #F50000;
     color: #FFF;
     font-size: 20px;
-    font-family: "Fira code", Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-decoration: none;
     text-shadow: 2px 2px 0 #606060;
@@ -65,45 +63,4 @@ a:hover, a:focus {
     transform: scale(1.08);
 }
 
-.container {
-    display: block;
-    background-color: #3A4042;
-    width: 627px;
-    height: 182px;
-    margin-top: 117px;
-    margin-left: 96px;
-    box-shadow: 5px 5px 0 #000;
-}
-
-.name-title{
-    color: #F50000;
-    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: normal;
-    text-shadow: 4px 4px 0px #000;
-    text-align: center;
-    padding-top: 42px;
-    padding-bottom: 20px;
-}
-
-.function-title{
-    color: #FFF;
-    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: normal;
-    text-shadow: 4px 4px 0px #000;
-    text-align: center;
-}
-
-.page-buttons {
-    padding-top: 37px;
-}
-
-.button--interact {
-    margin-left: 166px;
-}
 
