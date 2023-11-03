@@ -1,7 +1,7 @@
 /*     BANNER     */
 .banner {
     display: border-box;
-    background-image: url(../assets/img/my\ photo.jpeg);
+    background-image: url(../assets/img/photo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 800px;
@@ -25,19 +25,6 @@
     margin-bottom: 40px;
 }
 
-.title {
-    color: #F50000;
-    font-size: 40px;
-    text-shadow: 4px 4px 0px #000;
-    margin-bottom: 28px;
-}
-
-.container-subtitle {
-    color: #FFF;
-    font-size: 30px;
-    text-shadow: 3px 3px 0px #000;
-}
-
 .banner .page-buttons {
     display: flex;                                   /* flex-direction padrão é row */
     justify-content: space-around;                   /* altera de acordo com o flex-direction */
@@ -45,7 +32,6 @@
 
 
 /*     SKILLS     */
-
 .skills {
     background-color: #F50000;
     font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
@@ -56,29 +42,12 @@
     border-bottom: 10px solid #7776BC;
 }
 
-.skills-center {
-    display: block;
-    width: 500px;
-}
-
-.skills-title {
-    color: #FFF;
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 4px 4px 0 #000;
-}
-
-.skills .skills--html::before {
-    content: url(../assets/img/ico_html5.png);
-    padding-right: 28px;
-}
-
-.bar {
-    display: block;
-    background: #fff;
-    height: 40px;
-    border: 4px solid #000;
-    margin-bottom: 98px;
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills-list {
@@ -88,12 +57,12 @@
 
 .skills-icon {
     margin-right: 25px;
+    width: 90px;
 }
 
 .skills-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .skills-bar {
@@ -101,9 +70,24 @@
     border: 4px solid #000;
     border-top: 3px solid #000;
     box-sizing: border-box;
+    margin-top: 10px;
 }
 
 .skills-bar::-webkit-progress-bar,
 .skills-bar::-webkit-progress-bar {
     background-color: #fff;
 }
+
+.skills-wrapper .skills-list {
+    width: 430px;
+    margin-bottom: 38px;
+}
+
+.skills-wrapper .skills-list:nth-child(odd) {  /* seleciona impares */
+    margin-right: 100px;
+}
+
+.skills-wrapper .skills-bar {
+    width: 320px;
+}
+
