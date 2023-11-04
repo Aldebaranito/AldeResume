@@ -34,10 +34,7 @@
 /*     SKILLS     */
 .skills {
     background-color: #F50000;
-    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
     color: #FFF;
-    font-size: 25px;
-    text-shadow: 3px 3px 0px #000;
     padding: 50px 0 100px;
     border-bottom: 10px solid #7776BC;
 }
@@ -48,6 +45,9 @@
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 0px #000;
+    font-size: 25px;
 }
 
 .skills-list {
@@ -91,3 +91,25 @@
     width: 320px;
 }
 
+/*     PROJECTS      */
+.projects-each {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-each .projects-icon {
+    width: 280px;
+    height: 280px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px solid #FFF;
+}
+
+.projects-each .-first {
+    background: #CDC7E5;
+}
+
+.projects-each .projects-icon:nth-child(even) {
+    margin: 0px 150px;
+    background: #CDC7E5;
+}
